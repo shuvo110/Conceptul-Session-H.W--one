@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap');
+
+*{
+    padding: 0px ;
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: rgba(188, 143, 143, 0.726);
+}
+.nav .img-shop{
+    display:flex;
+    align-items: center;
+    max-width: 50%;
+}
+.nav .img-shop img{
+    width:15%;
+}
+.nav .img-shop h2{
+    font-size: 30px;
+
+}
+.nav .img-shop h2 .shop-color{
+    color: rgb(231, 42, 9);
+}
+.nav .link a{
+    font-size:20px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav .link a:nth-child(5){
+    background-color: rgb(110, 12, 202);
+    padding:3px 20px;
+    color: white;
+    border-radius:5px;
+    transition: 0.5s;
+}
+.nav .link a:nth-child(5):hover{
+    background-color: cyan;
+}
+
+
+/* Main section code star */
+main{
+ 
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+/* 1st section code start  */
+
+.img-text{
+    margin: 50px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(88, 51, 175, 0.192);
+    padding: 10px;
+    border-radius: 6px;
+}
+.img-text .text{
+    width:80%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+.img-text img{
+    width:100%;
+    border-radius: 9px;
+    
+}
+.img-text .text h2{
+    font-size: 40px;
+    background: -webkit-linear-gradient(#d41515, #0af16aa6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.img-text .text h3{
+    font-size:35px;
+    font-family: "Instrument Serif";
+    letter-spacing: 5px;
+    font-style: italic;
+    margin: 3px 0px 15px 0px;
+}
+.img-text .text a{
+    margin: 0px 10px;
+    font-size:25px;
+    align-items: center;
+    border-radius: 50%;
+}
+.img-text .text a:nth-child(1){
+    color:rgb(21, 21, 247);
+}
+.img-text .text a:nth-child(2){
+    color: #1DA1F2;
+}
+.img-text .text a:nth-child(4){
+   color: #d41515;
+}
+.img-text .text .boton{
+    margin:25px 9px 0px 4px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    border:2px  dotted red;
+    cursor: pointer;
+}
+
+/* 2nd code start  */
+
+.card-text{
+    margin: 50px auto;
+    max-width: 90%;
+}
+.card-text h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin:50px 0px;
+}
+.back-mul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px 20px;
+
+
+}
+.back-mul .card {
+    padding: 10px 20px;
+    background-color: #695f5f4b;
+    box-shadow: 8px 8px 5px black;
+}
+.back-mul .card img{
+    width: 100%;
+}
+.back-mul .card .tent-icon{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.back-mul .card .tent-icon i{
+    padding: 8px ;
+    margin-left:8px;
+    background-color: #000000;
+    color: white;
+    border-radius: 50%;
+}
+.back-mul .card .one{
+    margin: 15px 0px 9px 0px;
+    padding:5px 35px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+/* Phone Media Responsive */
+@media screen and (max-width:576px){
+    .nav{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    .nav .img-shop img{
+        width:30%;
+    }
+    .nav .img-shop h2{
+        font-size: 20px;
+    
+    }
+    .nav .link a{
+        display:block;
+        margin-top: 20px;
+    }
+
+    /* 1st section code start */
+    .img-text{
+        flex-direction:column-reverse;
+
+    }
+
+    /* 2nd code start */
+    .back-mul{
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+}
+
+
+
+
+/* Tep phone Media Responsive */
+@media screen and (min-width:577px) and (max-width:770px){
+    .nav{
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    .nav .img-shop img{
+        width:15%;
+    }
+    .nav .link a{
+        display:block;
+        margin-top: 20px;
+    }
+    
+    /* 2nd section  */
+    .back-mul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
